@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    
+<!-- Чтобы весь контент подключался в дефолтный шаблон  -->
+
+    
+    <div class="index">
+        <header class="header ">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__wrapper-burger">
+                        <span></span>
+                    </div>
+                    <a href="#" class="header__wrapper-logo">       
+                    </a>
+                    <div class="header__wrapper-box fixBlock">
+                        <div class="header__wrapper-dropdown dropdown">
+                            <div class="header__wrapper-dropdown-flex">
+                                <button class="header__wrapper-dropdown_btn dropbtn text-light-14">Красноярск</button>
+                                <img class="header__wrapper-dropdown_img" src="assets/img/arrow_down.png" alt="arrow">
+                            </div>
+                                <ul class="header__wrapper-dropdown_content dropdown-content" onclick="window.myFunction(event)">
+                                    <li class="header__wrapper-dropdown_content-link active-drop text-light-14">Красноярск</li>
+                                    <li class="header__wrapper-dropdown_content-link text-light-14">Москва</li>
+                                    <li class="header__wrapper-dropdown_content-link text-light-14">С.-Петербург</li>
+                                    <li class="header__wrapper-dropdown_content-link text-light-14">Екатеринбург</li>
+                                    <li class="header__wrapper-dropdown_content-link text-light-14">Новосибирск</li>
+                                </ul>
+                        </div>
+                        <nav class="header__wrapper-nav ">
+                            <ul class="header__wrapper-nav_list header__nav-list">
+                                <li class="header__wrapper-nav_list-item header__nav-list-item">
+                                    <a class="text-regular-16" href="#">
+                                        Помощники
+                                    </a>
+                                </li>
+                                <li class="header__wrapper-nav_list-item">
+                                    <a class="text-regular-16" href="#">
+                                        Я ищу работу
+                                    </a>
+                                </li>
+                                <li class="header__wrapper-nav_list-item">
+                                    <a class="text-regular-16" href="#">
+                                        Тест-драйв
+                                    </a>
+                                </li>
+                                <li class="header__wrapper-nav_list-item">
+                                    <a class="text-regular-16" href="#">
+                                        Заказать уборку
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__wrapper-entrance">
+                        <button class="btn btn-yellow">
+                            Войти
+                        </button>
+                    </div>
+                    <button class="header__wrapper-entrance_mobile">
+                        <img class="header__wrapper-entrance_mobile-icon" src="assets/img/human.png" alt="human">
+                    </button>
+                    <div class="header__account">
+                        <div class="header__account-wrap">
+                            <div class="header__account-photo">
+                                <img class="header__account-photo_img" src="assets/img/icon_account.png" alt="account">
+                            </div>
+                            <p class="header__account-name text-medium-16">Иван Иванов</p>
+                        </div>
+        
+                        <div class="header__account-profile">
+                                                <div class="menu">
+                                <ul class="menu-list">
+                                    <li class="menu-list_item">
+                                        <a class="menu-list_link" href="#">
+                                            <div class="menu-list_link-icon">
+                                                <img class="menu-list_link_img" src="assets/img/menu-1.svg" alt="menu">
+                                            </div>
+                                            <p class="menu-list_link-text">Профиль</p>
+                                        </a>
+                                    </li>
+                                    <li class="menu-list_item">
+                                        <a class="menu-list_link" href="#">
+                                            <div class="menu-list_link-icon">
+                                                <img class="menu-list_link_img" src="assets/img/menu-2.svg" alt="menu">
+                                            </div>
+                                            <p class="menu-list_link-text">Настройки</p>
+                                        </a>
+                                    </li>
+                                    <li class="menu-list_item menu-list_item-active">
+                                        <a class="menu-list_link" href="#">
+                                            <div class="menu-list_link-icon">
+                                                <img class="menu-list_link_img" src="assets/img/menu-3.svg" alt="menu">
+                                            </div>
+                                            <p class="menu-list_link-text">Мои заказы</p>
+                                        </a>
+                                    </li>
+                                    <li class="menu-list_item">
+                                        <a class="menu-list_link" href="#">
+                                            <div class="menu-list_link-icon">
+                                                <img class="menu-list_link_img" src="assets/img/menu-4.svg" alt="menu">
+                                            </div>
+                                            <p class="menu-list_link-text">Отзывы</p>
+                                        </a>
+                                    </li>
+                                    <li class="menu-list_item">
+                                        <a class="menu-list_link" href="#">
+                                            <div class="menu-list_link-icon">
+                                                <img class="menu-list_link_img" src="assets/img/menu-5.svg" alt="menu">
+                                            </div>
+                                            <p class="menu-list_link-text">Поддержка</p>
+                                        </a>
+                                    </li>
+                                    <li class="menu-list_item">
+                                        <a class="menu-list_link" href="#">
+                                            <div class="menu-list_link-icon">
+                                                <img class="menu-list_link_img" src="assets/img/menu-6.svg" alt="menu">
+                                            </div>
+                                            <p class="menu-list_link-text">Тарифы</p>
+                                        </a>
+                                    </li>
+                                    <li class="menu-list_item">
+                                        <a class="menu-list_link" href="#">
+                                            <div class="menu-list_link-icon">
+                                                <img class="menu-list_link_img" src="assets/img/menu-7.svg" alt="menu">
+                                            </div>
+                                            <p class="menu-list_link-text">Оплата</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <ul class="header__account-profile_nav">
+                                <li class="header__account-profile_nav-item header__account-profile_nav-item-none">
+                                    <a href="#" class="header__account-profile_nav-item_link text-light-14">
+                                        Профиль
+                                    </a>
+                                </li>
+                                <li class="header__account-profile_nav-item header__account-profile_nav-item-none">
+                                    <a href="#" class="header__account-profile_nav-item_link text-light-14">
+                                        Заказы
+                                    </a>
+                                </li>
+                                <li class="header__account-profile_nav-item">
+                                    <a href="#" class="header__account-profile_nav-item_link text-light-14">
+                                        <img class="header__account-profile_nav-item_img" src="assets/img/close.svg" alt="close">
+                                        <span>Выйти</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>   
+        <main>
+            <!-- Main -->
+            <section class="main">
+                <div class="container">
+                    <div class="main__wrapper">
+                        <div class="main__wrapper-btn">
+                            <button class="btn btn-green">Заказать уборку</button>
+                        </div>
+                        <div class="main__wrapper-btn">
+                            <button class="btn btn-yellow">Я ищу работу</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Гарантия качества и цены -->
+            <section class="guarantee">
+                <div class="container">
+                    <div class="guarantee__content">
+                        <h1 class="guarantee__content-titel text-medium-54-46-28 opas-85">
+                            Гарантия качества и цены 
+                        </h1>
+                        <div class="guarantee__content-decor">
+                            <img class="guarantee__content-decor_img decor-img" src="assets/img/decor.png" alt="decor">
+                        </div>
+                        <h2 class="guarantee__content-titel text-semiBold-24-18 opas-85">
+                            Мы гордимся тем, что предоставляем клининговые услуги высочайшего качества
+                        </h2>
+                        <p class="guarantee__content-text text-light-18 color-3 opas-85">Наши специалисты тщательно обучены, используют только проверенные средства и соблюдают высокие стандарты. Гарантируем чистоту и порядок в вашем доме по разумным и прозрачным ценам. Доверьтесь нам — ваш дом в надежных руках!</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Кто мы -->
+            <section class="about">
+                <div class="container">
+                    <div class="about__wrapper">
+                        <div class="about__wrapper-titel">
+                            <h2 class="text-medium-54-46-28 opas-9">
+                                Кто мы
+                            </h2>
+                            <img class="decor-img" src="assets/img/decor.png" alt="decor">
+                        </div>
+                        
+                        <div class="swiper about_slider">
+                            <div class="swiper-wrapper about__content">
+                                <div class="swiper-slide">
+                                    <div class="about__content-card">
+                                        <div class="about__content-card_top">
+                                            <h3 class="about__content-card_top-titel text-semiBold-24-18 opas-9">
+                                                Мы — клининговая компания «Доброе утро»
+                                            </h3>
+                                            <p class="text-light-18">Вот уже пять лет мы помогаем вам с уборкой и берем на себя заботу о чистоте и порядке в вашем доме.</p>
+                                        </div>
+                                        <div class="about__content-card_photo">
+                                            <img class="about__content-card_photo-img" src="assets/img/about-1.jpg" alt="about">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="about__content-card">
+                                        <img class="about__content-card_img" src="assets/img/about-2.jpg" alt="about">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="about__content-card">
+                                        <div class="about__content-card_item">
+                                            <p class="text-light-18 opas-85">Наша команда специалистов обладает большим профессиональным опытом и готова справиться с любыми задачами: генеральная уборка или уборка в квартире после ремонта. Мы заметили, что все чаще к нам стали обращаться клиенты, которым нужна не команда клинеров с техникой и средствами, а помощник по дому.</p>
+                                        </div>
+                                        <div class="about__content-card_photo">
+                                            <img class="about__content-card_photo-img" src="assets/img/about-3.jpg" alt="about">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="about__content-card">
+                                        <div class="about__content-card_item">
+                                            <p class="text-light-18">Профессиональный помощник, который будет помогать с уборкой и бытовыми делами на регулярной основе. При этом сделает все хорошо, ответственно, быстро и теми средствами, которые есть у хозяев квартиры. Надежный и постоянный помощник, которому вы сможете доверить ключи от своей квартиры.</p>
+                                        </div>
+                                        <div class="about__content-card_photo">
+                                            <img class="about__content-card_photo-img" src="assets/img/about-4.jpg" alt="about">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-prev"></div>
+                            <div class="about-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Мы рады предложить вам -->
+            <section class="offers">
+                <div class="container">
+                    <div class="offers__wrap">
+                        <h2 class="offers__wrap-titel titel text-medium-54-46-28 opas-85">Мы рады предложить вам</h2>
+                        <div class="offers__wrap-box">
+                            <div class="offers__wrap-box_item">
+                                <div class="offers__wrap-box_item-icon">
+                                    <img class="offers__wrap-box_item-icon-img" src="assets/img/icon-1.svg" alt="icon">
+                                </div>
+                                <p class="offers__wrap-box_item-text text-medium-18-16-14 opas-85">Профессионально подготовленный персонал</p>
+                            </div>
+                            <div class="offers__wrap-box_item">
+                                <div class="offers__wrap-box_item-icon">
+                                    <img class="offers__wrap-box_item-icon-img" src="assets/img/icon-2.svg" alt="icon">
+                                </div>
+                                <p class="offers__wrap-box_item-text text-medium-18-16-14 opas-85">Выбор помощника или помощников под ваши задачи</p>
+                            </div>
+                            <div class="offers__wrap-box_item">
+                                <div class="offers__wrap-box_item-icon">
+                                    <img class="offers__wrap-box_item-icon-img" src="assets/img/icon-3.svg" alt="icon">
+                                </div>
+                                <p class="offers__wrap-box_item-text text-medium-18-16-14 opas-85">Гарантия качества уборки и других работ</p>
+                            </div>
+                            <div class="offers__wrap-box_item">
+                                <div class="offers__wrap-box_item-icon">
+                                    <img class="offers__wrap-box_item-icon-img" src="assets/img/icon-4.svg" alt="icon">
+                                </div>
+                                <p class="offers__wrap-box_item-text text-medium-18-16-14 opas-85">Доступные цены</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Как заказать помощника«Доброе утро» -->
+        
+            <section class="assistant">
+                <div class="container">
+                    <h2 class="assistant__titel titel text-medium-54-46-28 opas-85">Как заказать помощника «Доброе утро»</h2>
+        
+                    <div class="assistant__container">
+                        <div class="assistant__container-left item-1">
+                            <div class="assistant__container-decor">
+                                <img class="decor-img" src="assets/img/decor.png" alt="decor">
+                            </div>
+                            <div class="assistant__container-flex">
+                                <p class="text-semiBold-24-18">ВСЁ ПРОСТО!</p>
+                                <img class="assistant__container-flex_line" src="assets/img/arrow_right.svg" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="assistant__container-item item-2">
+                            <div class="assistant__container-item_circle">
+                                <img class="assistant__container-item_circle-img" src="assets/img/assistant-1.svg" alt="assistant">
+                            </div>
+                            <p class="assistant__container-item_text text-light-18 opas-85">Выберите вид услуги: постоянная уборка или разовая помощь</p>
+                            <p class="assistant__container-item_number text-medium-18">01</p>
+                        </div>
+        
+                        <div class="assistant__container-item item-3">
+                            <div class="assistant__container-item_circle">
+                                <img class="assistant__container-item_circle-img" src="assets/img/assistant-2.svg" alt="assistant">
+                            </div>
+                            <p class="assistant__container-item_text text-light-18 opas-85">Укажите параметры квартиры или дома</p>
+                            <p class="assistant__container-item_number text-medium-18">02</p>
+                        </div>
+        
+                        <div class="assistant__container-item item-4">
+                            <div class="assistant__container-item_circle">
+                                <img class="assistant__container-item_circle-img" src="assets/img/assistant-3.svg" alt="assistant">
+                            </div>
+                            <p class="assistant__container-item_text text-light-18 opas-85">Укажите время и дату</p>
+                            <p class="assistant__container-item_number text-medium-18">03</p>
+                        </div>
+        
+                        <div class="assistant__container-item item-5">
+                            <div class="assistant__container-item_circle">
+                                <img class="assistant__container-item_circle-img" src="assets/img/assistant-4.svg" alt="assistant">
+                            </div>
+                            <p class="assistant__container-item_text text-light-18 opas-85">Выберите помощника или помощников из предложенных вариантов</p>
+                            <p class="assistant__container-item_number text-medium-18">04</p>
+                        </div>
+        
+                        <div class="assistant__container-item item-6">
+                            <div class="assistant__container-item_circle">
+                                <img class="assistant__container-item_circle-img" src="assets/img/assistant-5.svg" alt="assistant">
+                            </div>
+                            <p class="assistant__container-item_text text-light-18 opas-85">Деньги спишутся автоматически с привязанной банковской карты</p>
+                            <p class="assistant__container-item_number text-medium-18">05</p>
+                        </div>
+        
+                        <div class="assistant__container-left item-7">
+                            <div class="assistant__container-decor">
+                                <img class="decor-img" src="assets/img/decor.png" alt="decor">
+                            </div>
+                            <div class="assistant__container-flex">
+                                <p class="text-semiBold-24-18 color-green-light">ВАЖНО</p>
+                                <img class="assistant__container-flex_line" src="assets/img/arrow_right.svg" alt="arrow">
+                            </div>
+                        </div>
+        
+                        <div class="assistant__container-box item-8">
+                            <p class="assistant__container-box_text text-light-18 opas-85">Отмена или перенос заказа производятся заранее в личном кабинете. В день выполнения заказа отменить заявку будет невозможно.</p>
+                        </div>
+                        <div class="assistant__container-box item-9">
+                            <p class="assistant__container-box_text text-light-18 opas-85">Информация о заказе будет дублироваться на вашу почту.
+                            </p>
+                        </div>
+                        <div class="assistant__container-box item-10">
+                            <p class="assistant__container-box_text text-light-18 opas-85">Также на почту будут приходить напоминания о дате заказа.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Личный кабинет -->
+            <section class="office">
+                <div class="container">
+                    <div class="office__top">
+                        <h2 class="titel text-medium-54-46-28 opas-85">Личный кабинет</h2>
+                        <div class="office__top-decor">
+                            <img class="decor-img" src="assets/img/decor.png" alt="decor">
+                        </div>
+                        <p class="text-semiBold-24-18 opas-85">В личном кабинете вы можете</p>
+                    </div>
+                    <div class="office__box">
+                        <div class="office__box-wrap">
+                            <img class="office__box-wrap_img" src="assets/img/office-1.svg" alt="office">
+                            <p class="office__box-wrap_text text-medium-18-16-14 opas-85">Поменять тарифы</p>
+                        </div>
+                        <div class="office__box-wrap">
+                            <img class="office__box-wrap_img" src="assets/img/office-2.svg" alt="office">
+                            <p class="office__box-wrap_text text-medium-18-16-14 opas-85">Выбрать уборку
+                                другого типа</p>
+                        </div>
+                        <div class="office__box-wrap">
+                            <img class="office__box-wrap_img" src="assets/img/office-3.svg" alt="office">
+                            <p class="office__box-wrap_text-big text-medium-18-16-14 opas-85">Увеличить или уменьшить количество уборок</p>
+                        </div>
+                        <div class="office__box-wrap">
+                            <img class="office__box-wrap_img" src="assets/img/office-4.svg" alt="office">
+                            <p class="office__box-wrap_text text-medium-18-16-14 opas-85">Поменять помощника</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="office-two">
+                <div class="container">
+                    <div class="swiper office_slider">
+                        <div class="swiper-wrapper office_wrapper">
+                            <div class="swiper-slide">
+                                <div class="office_slide">
+                                    <div class="office_slide-left">
+                                        <img class="office_slide-left_img" src="assets/img/office-5.svg" alt="office">
+                                        <div class="office_slide-left_inner">
+                                            <p class="text-medium-18-16-14 opas-85">Вся история ваших заказов и информация о помощниках, выполнявших заказ будет сохраняться в личном кабинете платформы «Доброе утро».</p>
+                                            <img class=" decor-img" src="assets/img/decor.png" alt="decor">
+                                        </div>
+                                    </div>
+                                    <div class="office_slide-right">
+                                        <p class="text-light-18 opas-7">
+                                            Если вам понравится качество уборки, вы можете сделать помощника постоянным. Выберите функцию «уборка на постоянной основе» и составьте график работы. Выберите в календаре подходящие вам даты и забронируйте эти дни.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="office_slide">
+                                    <div class="office_slide-left">
+                                        <img class="office_slide-left_img" src="assets/img/office-6.svg" alt="office">
+                                        <div class="office_slide-left_inner">
+                                            <p class="office_slide-left_inner-text text-medium-18-16-14 opas-85">Постоянный помощник «Доброе утро» — это удобно и выгодно. При заказе услуги помощника от двух раз в месяц вы получите скидку.</p>
+                                            <img class="decor-img" src="assets/img/decor.png" alt="decor">
+                                        </div>
+                                    </div>
+                                    <div class="office_slide-right">
+                                        <p class="text-light-18 opas-7">
+                                            Деньги будут списываться с карты один раз в месяц сразу за все указанные в этом месяце даты уборки. Изменились планы? Меняйте даты в личном кабинете, в календаре. Вы можете перенести 1 уборку: она будет перенесена на следующий месяц.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="office-prev"></div>
+                        <div class="office-next"></div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Нужна помощь? -->
+            <section class="help">
+                <div class="container-two">
+                    <div class="help__container">
+                        <div class="help__container-photo">
+                            <img class="help__container-photo_img" src="assets/img/help.jpg" alt="help">
+                        </div>
+                        <div class="help__container-right">
+                            <h3 class="text-semiBold-24-18 opas-85">
+                                Нужна помощь?
+                            </h3>
+                            <div class="help__container-right_decor">
+                                <img class="help__container-right_decor-img decor-img" src="assets/img/decor.png" alt="decor">
+                            </div>
+                            <p class="text-light-18 text-light-18 opas-85">Вы решили сменить или отменить тариф, но предыдущий тариф еще действует? Или хотите отменить заказ из-за форс-мажора и по независящим от вас обстоятельствам? Напишите в техническую поддержку, и мы всегда вам поможем!</p>
+                            <div class="help__container-right_btn">
+                                <button class="btn btn-yellow">
+                                    Написать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Вопросы  и ответы -->
+        
+            <section class="answers">
+                <div class="container-min">
+                    <h2 class="answers__titel titel text-medium-54-46-28 opas-9">Вопросы  и ответы</h2>
+                    <ul class="answers__accrodion accordion__list">
+                        <li class="answers__accrodion-wrapper accordion">
+                            <button class="answers__accrodion-wrapper_btn accordion__control" aria-expanded="false">
+                                <span class="answers__accrodion-wrapper_titel accordion__title">Профессионально подготовленный персонал</span>
+                                <span class="answers__accrodion-wrapper_icon accordion__icon"></span>
+                            </button>
+                            <div class="answers__accrodion-wrapper_content accordion__content" aria-hidden="true">
+                                <div class="answers__accrodion-wrapper_content-dropdown">
+                                    <p class="text-light-18 opas-85">Наши специалисты тщательно обучены, используют только проверенные средства и соблюдают высокие стандарты. Гарантируем чистоту и порядок в вашем доме по разумным и прозрачным ценам. Доверьтесь нам – ваш дом в надежных руках! Вот уже пять лет мы помогаем вам с уборкой и берем на себя заботу о чистоте и порядке в вашем доме.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="answers__accrodion-wrapper accordion">
+                            <button class="answers__accrodion-wrapper_btn accordion__control" aria-expanded="false">
+                                <span class="answers__accrodion-wrapper_titel accordion__title">Выбор помощника или помощников под ваши задачи</span>
+                                <span class="answers__accrodion-wrapper_icon accordion__icon"></span>
+                            </button>
+                            <div class="answers__accrodion-wrapper_content accordion__content" aria-hidden="true">
+                                <div class="answers__accrodion-wrapper_content-dropdown">
+                                    <p class="text-light-18 opas-85">Наши специалисты тщательно обучены, используют только проверенные средства и соблюдают высокие стандарты. Гарантируем чистоту и порядок в вашем доме по разумным и прозрачным ценам. Доверьтесь нам – ваш дом в надежных руках! Вот уже пять лет мы помогаем вам с уборкой и берем на себя заботу о чистоте и порядке в вашем доме.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="answers__accrodion-wrapper accordion">
+                            <button class="answers__accrodion-wrapper_btn accordion__control" aria-expanded="false">
+                                <span class="answers__accrodion-wrapper_titel accordion__title">Гарантия качества уборки и других работ</span>
+                                <span class="answers__accrodion-wrapper_icon accordion__icon"></span>
+                            </button>
+                            <div class="answers__accrodion-wrapper_content accordion__content" aria-hidden="true">
+                                <div class="answers__accrodion-wrapper_content-dropdown">
+                                    <p class="text-light-18 opas-85">Наши специалисты тщательно обучены, используют только проверенные средства и соблюдают высокие стандарты. Гарантируем чистоту и порядок в вашем доме по разумным и прозрачным ценам. Доверьтесь нам – ваш дом в надежных руках! Вот уже пять лет мы помогаем вам с уборкой и берем на себя заботу о чистоте и порядке в вашем доме.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="answers__accrodion-wrapper accordion">
+                            <button class="answers__accrodion-wrapper_btn accordion__control" aria-expanded="false">
+                                <span class="answers__accrodion-wrapper_titel accordion__title">Моющие средства</span>
+                                <span class="answers__accrodion-wrapper_icon accordion__icon"></span>
+                            </button>
+                            <div class="answers__accrodion-wrapper_content accordion__content" aria-hidden="true">
+                                <div class="answers__accrodion-wrapper_content-dropdown">
+                                    <p class="text-light-18 opas-85">Наши специалисты тщательно обучены, используют только проверенные средства и соблюдают высокие стандарты. Гарантируем чистоту и порядок в вашем доме по разумным и прозрачным ценам. Доверьтесь нам – ваш дом в надежных руках! Вот уже пять лет мы помогаем вам с уборкой и берем на себя заботу о чистоте и порядке в вашем доме.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="answers__questions text-light-18" href="#">
+                        Все вопросы
+                    </a>
+                </div>
+            </section>
+        </main>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__content-flex footer__content-flex_left">
+                        <div>
+                            <a class="footer__content-flex_link text-light-18 opas-85" href="tel:+2719779">тел. 271-97-79</a>
+                            <p class="text-light-18 opas-85">ул. Весны, 26, ТК Арбат, оф. 408</p>
+                            <p class="text-light-18 opas-85">ул. Энергетиков, 73а, стр. 33</p>
+                            <a class="footer__content-flex_link text-light-18 opas-85" href="mailto:2932468@mail.ru">2932468@mail.ru</a>
+                        </div>
+                        <a class="footer__content-flex_link text-light-18 opas-85" href="#">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer__content-flex footer__content-flex_center">
+                        <div class="footer__content-flex_social">
+                            <a class="footer__content-flex_social-icon" href="#">
+                                <img class="footer__content-flex_social-icon_img" src="assets/img/odnoklassniki.png" alt="odnoklassniki">
+                            </a>
+                            <a class="footer__content-flex_social-icon" href="#">
+                                <img class="footer__content-flex_social-icon_img" src="assets/img/vkontakte.png" alt="vkontakte">
+                            </a>
+                            <a class="footer__content-flex_social-icon" href="#">
+                                <img class="footer__content-flex_social-icon_img" src="assets/img/whatsapp.png" alt="whatsapp">
+                            </a>
+                            <a class="footer__content-flex_social-icon" href="#">
+                                <img class="footer__content-flex_social-icon_img" src="assets/img/telegram.png" alt="telegram">
+                            </a>
+                        </div>
+                        <p class="footer__content-flex_center-text text-light-18 opas-85">
+                            &copy; 2024 Клининговая компания «Доброе утро»
+                        </p>
+                    </div>
+                    <div class="footer__content-payment">
+                        <img class="footer__content-payment_mir " src="assets/img/mir.png" alt="mir">
+                        <img class="footer__content-payment_visa" src="assets/img/visa.png" alt="visa">
+                        <img class="footer__content-payment_master-card" src="assets/img/master-card.png" alt="master-card">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+    </div>
+    
+    <!-- <table class="tabel" id="tabel"> 
+        <tr>
+            <th class="tabel-semiBold">Заголовок</th>
+            <th class="tabel-semiBold">Заголовок</th>
+            <th class="tabel-semiBold">Заголовок</th>
+            <th class="tabel-semiBold">Заголовок</th>
+        </tr>
+        <tbody>
+            <tr class="tabel-row">
+                <td class="tabel-light">123</td>
+                <td class="tabel-light">синий</td>
+                <td class="tabel-light">проводок</td>
+                <td class="tabel-light">А</td>
+            </tr>
+            <tr class="tabel-row">
+                <td class="tabel-light">8</td>
+                <td class="tabel-light">желтый</td>
+                <td class="tabel-light">стекло</td>
+                <td class="tabel-light">Б</td>
+            </tr>
+            <tr class="tabel-row">
+                <td class="tabel-light">16</td>
+                <td class="tabel-light">белый</td>
+                <td class="tabel-light">круглый</td>
+                <td class="tabel-light">В</td>
+            </tr>
+        </tbody>
+        <tr>
+            <td class="tabel-semiBold">Итог: 147</td>
+            <td class="tabel-semiBold">Итог: зеленый</td>
+            <td class="tabel-semiBold">Итог: лампочка</td>
+            <td class="tabel-semiBold">Итог: алфавит</td>
+        </tr>
+    </table> -->
+
+
+
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
